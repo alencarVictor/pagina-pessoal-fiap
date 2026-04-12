@@ -1,29 +1,32 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
 <html lang="pt-br">
+
 <head>
     <title>Página pessoal</title>
     <meta charset="UTF-8" />
 </head>
-<body>
 
+<body>
     <header>
-    <img src="https://ui-avatars.com/api/?background=581C87&color=2E1065&name=Victor+Alencar">
-             <span>Portifólio</span>
+        <div class="portifolio">
+            <img class="logo" src="https://ui-avatars.com/api/?background=581C87&color=2E1065&name=Victor+Alencar" />
+            <h1 class="titulo">Portifólio</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#objetivo">Objetivo Profissional</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a class="item" href="#sobre">Sobre Mim</a></li>
+                <li><a class="item" href="#objetivo">Objetivo Profissional</a></li>
+                <li><a class="item" href="#habilidades">Habilidades</a></li>
+                <li><a class="item" href="#formacao">Formação</a></li>
+                <li><a class="item" href="#experiencia">Experiência</a></li>
+                <li><a class="item" href="#projetos">Projetos</a></li>
+                <li><a class="item" href="#contato">Contato</a></li>
             </ul>
         </nav>
-     </header>
+    </header>
 
-
-     <main>
+    <main>
         <section id="inicio">
             <h1>Victor Felipe Silva Alencar</h1>
             <p>Desenvolvedor Backend em formação | Java</p>
@@ -32,155 +35,183 @@
             </div>
         </section>
 
-
         <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Ola! sou desenvolvedor em formação, apaixonado por tecnologia e focado em evoluir constantemente através da prática.
-            </p>
-            <img src="img/minha-foto.jpg" width="200" alt="Minha foto">
+            <div class="conteudo-sobre">
+                <h2 class="subtitulo">Sobre Mim</h2>
+                <div class="descricao">
+                    <p>Olá!</p>
+                    <p>
+                        Sou desenvolvedor em formação, apaixonado por tecnologia e focado
+                        em evoluir constantemente através da prática. Desejo evoluir
+                        constantemente através da prática, projetos e resolução de
+                        problemas, com o objetivo de ingressar na área e crescer como
+                        desenvolvedor.
+                    </p>
+                </div>
+            </div>
+            <img class="foto-perfil" src="img/minha-foto.jpg" width="200" alt="Minha foto" />
         </section>
 
-
         <section id="objetivo">
-            <h2>Objetivo principal</h2>
-            <p>Busco uma oportunidade de estágio em desenvolvimento backend, com foco em Java, onde eu possa contribuir em projetos financeiros e evoluir minhas habilidades na prática.
-            </p>
+            <h2 class="subtitulo">Objetivo profissional</h2>
+            <div class="descricao">
+                <p>
+                    Busco uma oportunidade de estágio em desenvolvimento backend, com
+                    foco em Java, onde eu possa contribuir em projetos financeiros e
+                    evoluir minhas habilidades na prática.
+                </p>
+            </div>
         </section>
 
         <section id="habilidades">
-    <h2>Habilidades</h2>
+            <h2 class="subtitulo">Habilidades</h2>
+            <div class="cartoes">
+                <article class="card">
+                    <h3 class="titulo-card">Soft Skills</h3>
+                    <ul class="lista">
+                        <li>Disciplina</li>
+                        <li>Proatividade</li>
+                        <li>Facilidade em aprender</li>
+                        <li>Organização</li>
+                        <li>Pensamento lógico</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3 class="titulo-card">Hard Skills</h3>
 
-    <h3>Soft Skills</h3>
+                    <ul class="lista">
+                        <li>Lógica de programação</li>
+                        <li>Programação orientada a objetos</li>
+                        <li>Estrutura de dados básica</li>
+                        <li>Desenvolvimento de APIs simples</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3 class="titulo-card">Tecnologias</h3>
+                    <ul class="lista">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>PostgreSQL</li>
+                        <li>API REST</li>
+                        <li>Git</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-    <ul>
-        <li>Disciplina</li>
-        <li>Proatividade</li>
-        <li>Facilidade em aprender</li>
-        <li>Organização</li>
-        <li>Pensamento lógico</li>
-    </ul>
+        <section id="formacao">
+            <h2 class="subtitulo">Formação</h2>
 
-    <h3>Hard Skills</h3>
+            <table>
+                <tr>
+                    <th>Curso</th>
+                    <th>Instituição</th>
+                    <th>Ano</th>
+                    <th>Descrição</th>
+                </tr>
 
-    <ul>
-        <li>Lógica de programação</li>
-        <li>Programação orientada a objetos</li>
-        <li>Estrutura de dados básica </li>
-        <li>Desenvolvimento de APIs simples</li>
-    
-    </ul>
+                <tr>
+                    <td>Ensino Médio Técnico</td>
+                    <td>ETEC</td>
+                    <td>2024</td>
+                    <td>
+                        Formação integrada ao ensino médio com base em tecnologia e
+                        projetos práticos.
+                    </td>
+                </tr>
 
-    <h3>Tecnologias</h3>
+                <tr>
+                    <td>Técnico em Desenvolvimento de Sistemas</td>
+                    <td>SENAI</td>
+                    <td>Em andamento</td>
+                    <td>
+                        Curso voltado ao desenvolvimento de sistemas, programação e lógica
+                        computacional.
+                    </td>
+                </tr>
 
-    <ul>
-        <li>Java </li>
-        <li>Spring Boot</li>
-        <li>PostgreSQL</li>
-        <li>API REST</li>
-        <li>Git</li>
-        <li>Python</li>
-        <li>JavaScript </li>
-    </ul>
-       </section>
+                <tr>
+                    <td>Graduação em Tecnologia</td>
+                    <td>FIAP</td>
+                    <td>Em andamento</td>
+                    <td>
+                        Graduação focada em desenvolvimento de software, inovação e
+                        tecnologias modernas.
+                    </td>
+                </tr>
+            </table>
+        </section>
 
+        <section id="experiencia">
+            <h2 class="subtitulo">Experiência</h2>
+            <div class="descricao">
+                <p>
+                    Ainda não possuo experiência profissional formal, mas desenvolvo
+                    projetos acadêmicos e pessoais com foco em backend, utilizando Java,
+                    APIs REST e banco de dados, aplicando na prática conceitos de
+                    programação e versionamento com Git.
+                </p>
+            </div>
+        </section>
 
-       <section id="formacao">
-    <h2>Formação</h2>
+        <section id="projetos">
+            <h2 class="subtitulo">Projetos</h2>
+            <div class="cartoes">
+                <article class="card">
+                    <h3 class="titulo-card">
+                        Sistema de Controle de Despesas Familiares
+                    </h3>
+                    <p>
+                        Aplicação desenvolvida para auxiliar no controle financeiro
+                        familiar, permitindo o registro, organização e análise de receitas
+                        e despesas.
+                    </p>
+                    <ul class="lista-linguagem">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3 card="titulo-card">API de Gerenciamento Financeiro</h3>
+                    <p>
+                        API REST desenvolvida para gerenciamento de transações
+                        financeiras, permitindo cadastro, consulta e organização de dados
+                    </p>
+                    <ul class="lista-linguagem">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3 class="titulo-card">Landing Page Responsiva</h3>
 
-    <table border="1">
-        <tr>
-            <th>Curso</th>
-            <th>Instituição</th>
-            <th>Ano</th>
-            <th>Descrição</th>
-        </tr>
+                    <p>
+                        Página web responsiva desenvolvida com foco em apresentação de
+                        conteúdo, utilizando boas práticas de HTML e organização de
+                        layout.
+                    </p>
+                    <ul class="lista-linguagem">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-        <tr>
-            <td>Ensino Médio Técnico</td>
-            <td>ETEC</td>
-            <td>2024</td>
-            <td>Formação integrada ao ensino médio com base em tecnologia e projetos práticos.</td>
-        </tr>
-
-         <tr>
-            <td>Técnico em Desenvolvimento de Sistemas</td>
-            <td>SENAI</td>
-            <td>Em andamento</td>
-            <td>Curso voltado ao desenvolvimento de sistemas, programação e lógica computacional.</td>
-        </tr>
-
-        <tr>
-            <td>Graduação em Tecnologia</td>
-            <td>FIAP</td>
-            <td>Em andamento</td>
-            <td>Graduação focada em desenvolvimento de software, inovação e tecnologias modernas.</td>
-        </tr>
-    </table>
-</section>
-
-       <section id="experiencia">
-    <h2>Experiência</h2>
-    <p>
-        Ainda não possuo experiência profissional formal, mas desenvolvo projetos acadêmicos e pessoais com foco em backend, utilizando Java, APIs REST e banco de dados, aplicando na prática conceitos de programação e versionamento com Git.
-    </p>
-      </section>
-
-      <section id="projetos">
-    <h2>Projetos</h2>
-    
-       
-     <h3>Sistema de controle de despesas familiares em Java</h3>
-
-     <p>plicação desenvolvida para auxiliar no controle financeiro familiar, permitindo o registro,
-        organização e análise de receitas e despesas.</p>
-
-    <ul>
-        <li>Java </li>
-        <li>Spring Boot</li>
-        <li>PostgreSQL</li>
-    </ul>
-
-    <h3>API de gerenciamento financeiro</h3>
-
-    <p>API REST desenvolvida para gerenciamento de transações financeiras, permitindo cadastro,
-        consulta e organização de dados</p>
-
-     <ul>
-        <li>Java</li>
-        <li>Spring Boot</li>
-    </ul>
-
-    <h3>Landing Page Responsiva</h3>
-
-    <p>Página web responsiva desenvolvida com foco em apresentação de conteúdo, utilizando boas práticas
-        de HTML e organização de layout.</p>
-    
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-
-
-    
-    </section>
-
-
-
-    <section id="contato">
-    <h2>Contato</h2>
-    <p>Em breve...</p>
-    </section>
-
-     </main>
-
-
-     <footer>
-    <p>2026 - Victor Felipe Silva Alencar</p>
+        <section id="contato">
+            <h2 class="subtitulo">Contato</h2>
+            <div class="descricao">
+                <p>Em breve...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2026 - Victor Felipe Silva Alencar</p>
     </footer>
-     
-     
 </body>
-
 
 </html>
