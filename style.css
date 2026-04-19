@@ -130,6 +130,7 @@ nav ul {
   text-align: justify;
 }
 
+
 .foto-perfil {
   width: 200px;
   border-radius: var(--radius);
@@ -264,6 +265,113 @@ tr:hover {
   padding: 20px 80px;
   flex-direction: column;
   margin: 40px 80px;
+}
+
+#contato .descricao {
+  margin-top: 0;
+}
+
+.container-contato {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.descricao, 
+.info-contato {
+    display: flex;
+    border: 2px;
+}
+.card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* grupo (label + input) */
+.card form div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* labels */
+.card label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* inputs e textarea */
+.card input,
+.card textarea {
+    padding: 10px;
+    border-radius: var(--radius);
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* foco (quando clica) */
+.card input:focus,
+.card textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 5px var(--secondary);
+}
+
+/* botão */
+.card button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: var(--secondary);
+    transform: scale(1.03);
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: var(--radius);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* cores */
+.github {
+    background-color: var(--primary);
+}
+
+.linkedin {
+    background-color: var(--secondary);
+}
+
+/* hover mais bonito */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.info-contato h4 {
+    margin-top: 15px;
+}
+
+.info-contato p {
+    margin-bottom: 15px;
 }
 
 footer {

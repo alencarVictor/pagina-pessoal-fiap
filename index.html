@@ -204,8 +204,52 @@
 
         <section id="contato">
             <h2 class="subtitulo">Contato</h2>
-            <div class="descricao">
-                <p>Em breve...</p>
+            <div class="container-contato">
+                <div class="cartoes">
+
+                    <!-- FORM -->
+                    <div class="descricao">
+                        <form>
+                            <article class="card">
+                                <h3 class="titulo-card">Envie sua mensagem</h3>
+
+                                <div>
+                                    <label for="nome">Nome:</label><br>
+                                    <input type="text" id="nome" name="nome" required>
+                                </div>
+
+                                <div>
+                                    <label for="email">Email:</label><br>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div>
+                                    <label for="mensagem">Mensagem:</label><br>
+                                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                                </div>
+
+                                <button type="submit">Enviar</button>
+                            </article>
+                        </form>
+                    </div>
+
+                    <!-- CONTATOS -->
+                    <div class="descricao">
+                        <article class="card">
+                            <h3 class="titulo-card">Meus contatos</h3>
+
+                            <h4>Email</h4>
+                            <p>victor.alencar@sp.com.br</p>
+
+                            <h4>Redes Sociais</h4>
+                            <div class="redes-sociais">
+                                <a href="https://github.com/alencarVictor" target="_blank" class="btn github">GitHub</a>
+                                <a href="https://www.linkedin.com/in/victor-alencar-58623a3ba/" target="_blank"
+                                    class="btn linkedin">LinkedIn</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
