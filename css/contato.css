@@ -1,0 +1,115 @@
+/* CONTATO */
+#contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contato {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* FORM */
+form.card {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* LADO DIREITO (EMAIL + REDES) */
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.contato-info .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* FORM CAMPOS */
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card label {
+  font-weight: bold;
+}
+
+.card input,
+.card textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.card input:focus,
+.card textarea:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 5px var(--secondary);
+}
+
+/* BOTÃO */
+.card button {
+  padding: 12px;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: var(--secondary);
+  transform: scale(1.03);
+}
+
+/* REDES SOCIAIS */
+.redes-sociais {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.redes-sociais .btn {
+  flex: 1;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: var(--radius);
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.github {
+  background-color: var(--primary);
+}
+
+.linkedin {
+  background-color: var(--secondary);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

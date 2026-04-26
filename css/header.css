@@ -1,0 +1,81 @@
+/* HEADER */
+header {
+  background-color: var(--primary);
+  padding: 5px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+.portifolio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titulo {
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.item {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.item:hover {
+  color: var(--accent);
+  transform: scale(1.05);
+}
+
+/* INICIO */
+#inicio {
+  text-align: center;
+  background-color: var(--primary);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  padding: 40px 10px;
+  max-width: 1400px;
+  margin-top: 0;
+}
+
+#inicio h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  color: var(--accent);
+}
+
+#inicio p {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.links-rapidos a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: var(--accent);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.links-rapidos a:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05);
+}
