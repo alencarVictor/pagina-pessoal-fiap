@@ -1,0 +1,90 @@
+@media (max-width: 748px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .portifolio {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  nav li {
+    text-align: center;
+  }
+
+  .item {
+    display: block;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  #sobre,
+  #objetivo,
+  #habilidades,
+  #formacao,
+  #experiencia,
+  #projetos,
+  #contato {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  #sobre img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  th, td {
+    padding: 6px;
+    word-break: break-word;
+  }
+}
+
+@media (max-width:480px){
+
+  #inicio h1 {
+    font-size: 30px;
+  }
+
+  #inicio p {
+    font-size: 22px;
+  }
+
+  .links-rapidos a {
+    padding: 8px 20px;
+  }
+}
+
+.tabela-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  margin-top: 35px;
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

@@ -3,16 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página pessoal</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/habilidades-e-projetos.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/sobre.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    
 </head>
 
 <body>
 
     <header>
         <div class="portifolio">
-            <img class="logo" src="https://ui-avatars.com/api/?background=581C87&color=2E1065&name=Victor+Alencar" />
-            <h1 class="titulo">Portifólio</h1>
+            <img class="logo" src="https://ui-avatars.com/api/?background=581C87&color=2E1065&name=Victor+Alencar"
+                alt="Logo">
+            <h1 class="titulo">Portfólio</h1>
         </div>
 
         <nav>
@@ -36,32 +47,31 @@
             <p>Desenvolvedor Backend em formação | Java</p>
 
             <div class="links-rapidos">
-                <a href="#sobre">Conheça Mais</a> |
+                <a href="#sobre">Conheça Mais</a>
                 <a href="#contato">Contato</a>
             </div>
         </section>
 
         <!-- SOBRE -->
         <section id="sobre">
-            <div class="conteudo-sobre">
+            <div>
                 <h2 class="subtitulo">Sobre Mim</h2>
 
                 <div class="descricao">
                     <p>Olá!</p>
                     <p>
                         Sou desenvolvedor em formação, apaixonado por tecnologia e focado
-                        em evoluir constantemente através da prática, projetos e resolução
-                        de problemas.
+                        em evoluir constantemente através da prática, projetos e resolução de problemas.
                     </p>
                 </div>
             </div>
 
-            <img class="foto-perfil" src="img/minha-foto.jpg" alt="Minha foto" />
+            <img class="foto-perfil" src="img/minha-foto.jpg" alt="Minha foto">
         </section>
 
         <!-- OBJETIVO -->
         <section id="objetivo">
-            <h2 class="subtitulo">Objetivo profissional</h2>
+            <h2 class="subtitulo">Objetivo Profissional</h2>
 
             <div class="descricao">
                 <p>
@@ -82,7 +92,7 @@
                     <ul class="lista">
                         <li>Disciplina</li>
                         <li>Proatividade</li>
-                        <li>Facilidade em aprender</li>
+                        <li>Aprendizado rápido</li>
                         <li>Organização</li>
                         <li>Pensamento lógico</li>
                     </ul>
@@ -91,10 +101,10 @@
                 <article class="card">
                     <h3 class="titulo-card">Hard Skills</h3>
                     <ul class="lista">
-                        <li>Lógica de programação</li>
                         <li>POO</li>
-                        <li>Estrutura de dados básica</li>
+                        <li>Estrutura de dados</li>
                         <li>APIs REST</li>
+                        <li>Banco de dados</li>
                     </ul>
                 </article>
 
@@ -116,36 +126,37 @@
         <!-- FORMAÇÃO -->
         <section id="formacao">
             <h2 class="subtitulo">Formação</h2>
+            <div class="tabela-container">
+                <table>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Instituição</th>
+                        <th>Ano</th>
+                        <th>Descrição</th>
+                    </tr>
 
-            <table>
-                <tr>
-                    <th>Curso</th>
-                    <th>Instituição</th>
-                    <th>Ano</th>
-                    <th>Descrição</th>
-                </tr>
+                    <tr>
+                        <td>Ensino Médio Técnico</td>
+                        <td>ETEC</td>
+                        <td>2024</td>
+                        <td>Base técnica em tecnologia e projetos.</td>
+                    </tr>
 
-                <tr>
-                    <td>Ensino Médio Técnico</td>
-                    <td>ETEC</td>
-                    <td>2024</td>
-                    <td>Formação com base em tecnologia e projetos.</td>
-                </tr>
+                    <tr>
+                        <td>Técnico em Desenvolvimento de Sistemas</td>
+                        <td>SENAI</td>
+                        <td>Em andamento</td>
+                        <td>Programação e lógica computacional.</td>
+                    </tr>
 
-                <tr>
-                    <td>Técnico em Desenvolvimento de Sistemas</td>
-                    <td>SENAI</td>
-                    <td>Em andamento</td>
-                    <td>Foco em programação e lógica computacional.</td>
-                </tr>
-
-                <tr>
-                    <td>Graduação em Tecnologia</td>
-                    <td>FIAP</td>
-                    <td>Em andamento</td>
-                    <td>Foco em software e inovação.</td>
-                </tr>
-            </table>
+                    <tr>
+                        <td>Graduação em Tecnologia</td>
+                        <td>FIAP</td>
+                        <td>Em andamento</td>
+                        <td>Software e inovação.</td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
         <!-- EXPERIÊNCIA -->
@@ -154,9 +165,8 @@
 
             <div class="descricao">
                 <p>
-                    Ainda não possuo experiência profissional formal, mas desenvolvo
-                    projetos acadêmicos e pessoais utilizando Java, APIs REST e banco
-                    de dados.
+                    Ainda não possuo experiência formal, mas desenvolvo projetos
+                    com Java, APIs REST e banco de dados.
                 </p>
             </div>
         </section>
@@ -170,6 +180,7 @@
                 <article class="card">
                     <h3 class="titulo-card">Controle de Despesas</h3>
                     <p>Aplicação para controle financeiro familiar.</p>
+
                     <ul class="lista-linguagem">
                         <li>Java</li>
                         <li>Spring Boot</li>
@@ -179,7 +190,8 @@
 
                 <article class="card">
                     <h3 class="titulo-card">API Financeira</h3>
-                    <p>API REST para gerenciamento de transações.</p>
+                    <p>API REST para transações financeiras.</p>
+
                     <ul class="lista-linguagem">
                         <li>Java</li>
                         <li>Spring Boot</li>
@@ -189,6 +201,7 @@
                 <article class="card">
                     <h3 class="titulo-card">Landing Page</h3>
                     <p>Página responsiva com HTML, CSS e JS.</p>
+
                     <ul class="lista-linguagem">
                         <li>HTML</li>
                         <li>CSS</li>
@@ -207,39 +220,40 @@
 
                 <!-- FORM -->
                 <form class="card">
-                    <h3 class="titulo-card">Envie sua mensagem</h3>
+                    <h3 class="titulo-card">Envie uma mensagem</h3>
 
                     <div>
-                        <label>Nome:</label>
+                        <label>Nome</label>
                         <input type="text" required>
                     </div>
 
                     <div>
-                        <label>Email:</label>
+                        <label>Email</label>
                         <input type="email" required>
                     </div>
 
                     <div>
-                        <label>Mensagem:</label>
+                        <label>Mensagem</label>
                         <textarea rows="5" required></textarea>
                     </div>
 
                     <button type="submit">Enviar</button>
                 </form>
 
-                <!-- DIREITA -->
+                <!-- INFO -->
                 <div class="contato-info">
 
                     <article class="card">
-                        <h2 class="titulo-card">E-mail</h2>
+                        <h3 class="titulo-card">E-mail</h3>
                         <p>victor.alencar@sp.com.br</p>
                     </article>
 
                     <article class="card">
-                        <h2 class="titulo-card">Redes Sociais</h2>
+                        <h3 class="titulo-card">Redes Sociais</h3>
+
                         <div class="redes-sociais">
-                            <a href="https://github.com/alencarVictor" target="_blank" class="btn github">GitHub</a>
-                            <a href="https://www.linkedin.com/" target="_blank" class="btn linkedin">LinkedIn</a>
+                            <a class="btn github" href="https://github.com/" target="_blank">GitHub</a>
+                            <a class="btn linkedin" href="https://linkedin.com/" target="_blank">LinkedIn</a>
                         </div>
                     </article>
 

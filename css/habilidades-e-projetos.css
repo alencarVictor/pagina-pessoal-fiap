@@ -1,0 +1,92 @@
+/* HABILIDADES E PROJETOS */
+#habilidades,
+#projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cartoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  border-top: 10px solid var(--accent);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  width: 300px;
+  padding: 20px;
+  transition: 0.3s;
+  text-align: justify;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.titulo-card {
+  padding: 10px 0;
+}
+
+.lista {
+  padding-left: 16px;
+}
+
+.lista li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+/* TABELA */
+table {
+  margin-top: 35px;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+th {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #7ecce7;
+}
+
+/* LINGUAGENS */
+.lista-linguagem {
+  display: flex;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.lista-linguagem li {
+  list-style: none;
+  background-color: var(--secondary);
+  border-radius: var(--radius);
+  padding: 4px 6px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.lista-linguagem li:hover {
+  background-color: var(--accent);
+  transform: scale(1.05);
+}
