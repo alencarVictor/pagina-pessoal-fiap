@@ -26,3 +26,32 @@ section {
   flex-direction: column;
 }
 
+.btn-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: white;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.btn-topo:hover {
+  transform: scale(1.1);
+  background-color: var(--secondary);
+}
+
