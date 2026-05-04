@@ -90,3 +90,35 @@ tr:hover {
   background-color: var(--accent);
   transform: scale(1.05);
 }
+.accordion-container {
+  margin-top: 30px;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: var(--radius);
+  margin-top: 5px;
+}
+
+/* quando abre */
+.accordion-item.ativo .accordion-content {
+  display: block;
+}
