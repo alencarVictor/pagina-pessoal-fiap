@@ -249,23 +249,33 @@
                 <form class="card">
                     <h3 class="titulo-card">Envie uma mensagem</h3>
 
+
                     <div>
                         <label>Nome</label>
-                        <input type="text" required>
+                        <input type="text" id="nome" required>
+                        <span class="erro-msg" id="erro-nome"></span>
                     </div>
 
                     <div>
                         <label>Email</label>
-                        <input type="email" required>
+                        <input type="email" id="email" required>
+                        <span class="erro-msg" id="erro-email"></span>
                     </div>
 
                     <div>
                         <label>Mensagem</label>
-                        <textarea rows="5" required></textarea>
+                        <textarea id="mensagem" rows="5" required></textarea>
+                        <span class="erro-msg" id="erro-mensagem"></span>
                     </div>
 
                     <button type="submit">Enviar</button>
+                    <p id="resposta"></p>
                 </form>
+
+                <div id="sucesso-box" class="sucesso-box" style="display: none;">
+                    <h3>✔ Mensagem enviada com sucesso!</h3>
+                    <p>Obrigado por entrar em contato!! Retornarei em breve.</p>
+                </div>
 
                 <!-- INFO -->
                 <div class="contato-info">

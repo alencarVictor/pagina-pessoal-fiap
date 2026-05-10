@@ -18,6 +18,29 @@ form.card {
   flex-direction: column;
   gap: 20px;
 }
+.erro-msg {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+.input-erro {
+    border: 2px solid #ff4d4d;
+    background-color: #ffecec;
+}
+
+.sucesso-box {
+    background-color: #22c55e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.sucesso-box h3 {
+    margin-bottom: 10px;
+}
 
 /* LADO DIREITO (EMAIL + REDES) */
 .contato-info {
