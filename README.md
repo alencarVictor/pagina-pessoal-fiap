@@ -7,6 +7,10 @@
 ## Objetivo do Site
 Desenvolver uma landing page pessoal com foco em tecnologia , aplicando os conteudos vistos em aula
 
+## Acesse o projeto online
+
+https://alencarvictor.github.io/pagina-pessoal-fiap/
+
 
 ## Paleta de cores
 - Primary: #581C87
