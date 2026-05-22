@@ -2,6 +2,7 @@
 #contato {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
 .container-contato {
